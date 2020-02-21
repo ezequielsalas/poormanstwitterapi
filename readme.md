@@ -34,7 +34,7 @@ python manage.py migrate
 ## Deployment
 
 ```bash
-python manage.py runserver 8080
+python manage.py runserver 8000
 ```
 
 
