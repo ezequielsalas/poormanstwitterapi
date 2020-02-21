@@ -5,7 +5,7 @@ from core.serializers import TweetSerializer
 from rest_framework.views import status
 
 
-class CountryDataTestCase(APITestCase):
+class TweetTestCase(APITestCase):
 
     def setUp(self):
         self.client = APIClient()
@@ -30,11 +30,12 @@ class CountryDataTestCase(APITestCase):
 
     def test_create_tweet(self):
         """
-            This test ensures that a countryData is updated when we make a PATCH request to the display_data/:pk endpoint
+            This test create a tweet
         """
         tweet = {
             "name": "Tony Stark",
             "message": "Hello, I'm Iron Man",
+            "datetime": "2020-02-02T00:00:00"
         }
 
         # hit the API endpoint
